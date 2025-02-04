@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+        <meta name='description' content='A simple HTML5 template'>
+        <meta name='keywords' content='HTML, template, simple'>
+        <meta name='author' content='Your Name'>
+        <link rel='stylesheet' href='styles.css'>
+        <link rel='icon' href='favicon.ico' type='image/x-icon'>
+        <title>Document Title</title>
+        <style>
+            body{
+
+            }
+            .grid-container {
+                background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+                /* background: rgb(2,0,36); */
+                padding: 30px;
+                color: white;
+                display: grid;
+                grid-template-columns: auto auto auto;
+                grid-template-rows: auto auto ;
+                /* or */
+                grid-template: 100px 200px/ 30% auto auto;
+                grid-gap: 20px 30px;
+                /* grid-row-gap: 10px; */
+                /* grid-column-column:10px ; */
+                 
+                
+                 
+            }
+            .grid-item{
+                border: 5px solid cornsilk;
+                padding: 10px;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                 
+            }
+            #i3{
+                /* grid-row-start: 2;
+                grid-row-end:  span 5; */
+
+                /* or */
+
+                grid-row: 2/span 3;
+                
+            }
+            #i7{
+                grid-column-start: 3;
+                grid-column-end:  span 2;
+                    /* or */
+                    grid-column: 4/span 2;
+            }
+            /* Responsive */
+            #i9{
+                grid-area: 2/3/span 2/span 2;
+            }
+        </style>
+    </head>
+    <body>
+       <!-- grids  -->
+        <div class="grid-container">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item" id="i3">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+            <div class="grid-item" id="i7">7</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item" id="i9">9</div>
+            <div class="grid-item">10</div>
+            <div class="grid-item">11</div>
+            <div class="grid-item">12</div>
+            <div class="grid-item">13</div>
+            <div class="grid-item">14</div>
+        </div>
+    </body>
+</html>

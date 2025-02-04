@@ -1,0 +1,94 @@
+<<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="A simple HTML5 template" />
+    <meta name="keywords" content="HTML, template, simple" />
+    <meta name="author" content="Your Name" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="a_logo.png" type="image/x-icon" />
+    <title>Forms</title>
+  </head>
+
+  <body>
+    <h1>Forms</h1>
+    <form action="">
+      <label for="uname">Enter Name:</label>
+      <input
+        type="text"
+        name="name1"
+        id="uname"
+        placeholder="Enter text here"
+        size="40"
+        maxlength="25"
+        value=""
+        required
+      />
+      <br />
+      <label for="pwd">Enter Passwrod:</label>
+      <input
+        type="password"
+        name="pass"
+        id="pwd"
+        size="35"
+        placeholder="Enter Passwrod"
+      />
+
+      <br />
+      <label for="email">Enter Email:</label>
+      <input type="email" name="email" id="email" placeholder="Enter Email" />
+      <br /> 
+      
+     <!-- Feedback -->
+      <label for="feedback">Feedback:</label><br />
+      <textarea name="feedback" id="feedback" rows="7" cols="50">
+        Positive review</textarea
+      >
+      <br />
+      <!-- checkbox -->
+      <label for="hobby">Choose yor hooby:</label>
+      <input type="checkbox" name="hobby" id="Cook" value="Cook" />
+      <label for="Cook">Cook</label>
+      <input type="checkbox" name="hobby" id="Singing" value="Singing" />
+      <label for="Singing">Singing</label>
+      <input type="checkbox" name="hobby" id="Dancing" value="Dancing" />
+      <label for="Dancing">Dancing</label>
+      <br><br>
+      <br />
+      
+      <!-- to make the text clickable -->
+      <label for="program">Select your program here:</label><br>
+      <input type="radio" name="program" id="btech" value="btech" checked>
+      <label for="btech">btech</label>
+      <input type="radio" name="program" id="BCA" value="BCA">
+      <label for="BCA">BCA</label>
+      <input type="radio" name="program" id="MBBS" value="MBBS">
+      <label for="MBBS">MBBS</label>
+      <input type="radio" name="program" id="BA" value="BA">
+      <label for="BA">BA</label>
+      <br>
+      <!-- dropdown menu -->
+      <label for="statesel">Select State:</label>
+      <select name="statesel" id="statesel" size="3" multiple >
+        <option value="choose">Choose your state</option>
+        <option value="punjab" selected>Punjab</option>
+        <option value="Kerala">Kerala</option>
+        <option value="UP">UP</option>
+      </select><br><br>
+      <!-- file upload -->
+<label for="upload">Upload</label>
+<input type="file" name="upload" id="upload">
+
+
+
+<br>
+      <br>
+      <input type="submit" name="submitform" value="Submit Form" />
+      <input type="reset" name="resetform" value="Reset Form" />
+      <input type="image" name="imagebtn" id="imagebtn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAnFBMVEX///8Wqf8UmOUAo//k9v8UovQApf8AkuMAof8Al+sAp/+d3f/o8f9Uxf/u9/8yrv/3/f8Arv9+zv9Esv/R9f+m1v9auf+N1P+o2v9oxf8Anv9Uv//i8v/t/f/T7f8Am/S34v+Z0fV8w/LG6P8zuP8yqe6p2PRXs/GWy/NrvPQ+v/8XoepgtOx0vfCZ1P9pwf/e+v+z5/+52/+Qy//gYZC3AAADFklEQVR4nO2YfZOaMBCHw4urRoUI9QVBDg3WO70D7X3/79YEbSsM2OuN5fjj98w4aiajz2yW3SSMAQAAAAAAAAAAAAAAAAAAAAAAAAC0hLBbR9zzceLRYcrJ+t/QU7+Eedxv4nozkQRTY2q0Qc+sMjy+JDVacdiOUL2UorePq2EatWbUJKXYlIPltRemO1K97dc5NUqZwxurRbtOzVJm7/mXk5zyrkiZR3mVSttVuis13F2cWn3w/iZlPn0vqkH4lVL917d+2Wqv60LSsHqciHOdbJeEUx85qTEqhug6xTCIDDWsZhL/cGbeSm3FtmxVZFVW/1s0X0qZ+ZzSzNVfFzmFS8XM59zPsmJKsPR5kJG3vDD/qNXt8vW3rBIr9QCKoPaneBrFi8weG3QQvpphfZsNPCaT5BT5PFwLLcBPbG6NxgMvSSRLkuRTUmb/rWL1Iph9qA/UKFqplYlnq4PzW8rRLV7OrHAdz7hBEyG0FJGlJvGB9ZnlK9KqvII7h0X1KUUjFSTi87l1K6VSis5aahGrofPypKUsNXviuP9Q6ypPX/9FPN9YHW0W1VdznjqODKYrTjdSwguCRLo8FKGt1soOHyOlY3VjdYyapAwyvNhh0r2NFIuiyIlUxgueZCsvdtcPkto6b2ZJqqmec4tPA1sOLlJULJ8uAsnYCoXhRavk3X+MVH+zfi0vX0Oiu+ecDK48eFo8aXR6t5SUKlcBM0Lhpk4a++lDpCpOOtEbSoIKiE/knqXFTz9UygdsTp7jKmSkI2XJOKHHSG2cfbUkNBRPnkohZaSKEgVOLKXIDFI5Fcf2OLdCZlgT9k5zXRKcQkp8Wuq54qSLZ1ObISNYjAL9V+R7o0WoOoofKHI15Aaq9+Suend5mmubaf5xpUqbsV9r2kxjQyZrUDQ6lfKXwqg735/Wd31R0QavzfDfpczdrpz1l4bcya1LNzd53dwOd/Lg0M0jVjcPo504tg+rx/ZOXnCwr74K6uV1V0GsuDSbtHNpNixzDDdq73aHrl0vAgAAAAAAAAAAAAAAAAAAAAAAAAA8kp9gx1R58WvdzAAAAABJRU5ErkJggg==" height=150" width="150">
+    </form>
+  </body>
+</html>
+>
