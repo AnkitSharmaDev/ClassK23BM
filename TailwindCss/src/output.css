@@ -695,18 +695,6 @@
       max-width: 96rem !important;
     }
   }
-  .m-5 {
-    margin: calc(var(--spacing) * 5);
-  }
-  .m-10 {
-    margin: calc(var(--spacing) * 10);
-  }
-  .m-15 {
-    margin: calc(var(--spacing) * 15);
-  }
-  .m-20 {
-    margin: calc(var(--spacing) * 20);
-  }
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
   }
@@ -716,29 +704,17 @@
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
   }
-  .mb-0 {
-    margin-bottom: calc(var(--spacing) * 0);
-  }
-  .mb-2 {
-    margin-bottom: calc(var(--spacing) * 2);
-  }
   .mb-3 {
     margin-bottom: calc(var(--spacing) * 3);
   }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
   }
-  .mb-6 {
-    margin-bottom: calc(var(--spacing) * 6);
-  }
   .mb-7 {
     margin-bottom: calc(var(--spacing) * 7);
   }
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
-  }
-  .ml-4 {
-    margin-left: calc(var(--spacing) * 4);
   }
   .ml-5 {
     margin-left: calc(var(--spacing) * 5);
@@ -751,12 +727,6 @@
   }
   .ml-10 {
     margin-left: calc(var(--spacing) * 10);
-  }
-  .ml-12 {
-    margin-left: calc(var(--spacing) * 12);
-  }
-  .ml-14 {
-    margin-left: calc(var(--spacing) * 14);
   }
   .ml-15 {
     margin-left: calc(var(--spacing) * 15);
@@ -847,6 +817,9 @@
   }
   .aspect-square {
     aspect-ratio: 1 / 1;
+  }
+  .h-56 {
+    height: calc(var(--spacing) * 56);
   }
   .h-screen {
     height: 100vh;
@@ -1055,9 +1028,6 @@
   .list-outside {
     list-style-position: outside;
   }
-  .list-\[ci\] {
-    list-style-type: ci;
-  }
   .list-\[circle\] {
     list-style-type: circle;
   }
@@ -1075,9 +1045,6 @@
   }
   .list-\[upper-roman\] {
     list-style-type: upper-roman;
-  }
-  .list-\[upper\] {
-    list-style-type: upper;
   }
   .list-decimal {
     list-style-type: decimal;
@@ -1508,6 +1475,9 @@
   .border-blue-500 {
     border-color: var(--color-blue-500);
   }
+  .border-pink-300 {
+    border-color: var(--color-pink-300);
+  }
   .bg-\(--my_variable\) {
     background-color: var(--my_variable);
   }
@@ -1522,6 +1492,9 @@
   }
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
+  }
+  .bg-blue-800 {
+    background-color: var(--color-blue-800);
   }
   .bg-red-500 {
     background-color: var(--color-red-500);
@@ -1698,15 +1671,6 @@
   .object-top {
     object-position: top;
   }
-  .p-1 {
-    padding: calc(var(--spacing) * 1);
-  }
-  .p-2 {
-    padding: calc(var(--spacing) * 2);
-  }
-  .p-4 {
-    padding: calc(var(--spacing) * 4);
-  }
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
@@ -1715,9 +1679,6 @@
   }
   .p-8 {
     padding: calc(var(--spacing) * 8);
-  }
-  .p-10 {
-    padding: calc(var(--spacing) * 10);
   }
   .pl-4 {
     padding-left: calc(var(--spacing) * 4);
@@ -1783,14 +1744,6 @@
   .text-6xl {
     font-size: var(--text-6xl);
     line-height: var(--tw-leading, var(--text-6xl--line-height));
-  }
-  .text-7xl {
-    font-size: var(--text-7xl);
-    line-height: var(--tw-leading, var(--text-7xl--line-height));
-  }
-  .text-9xl {
-    font-size: var(--text-9xl);
-    line-height: var(--tw-leading, var(--text-9xl--line-height));
   }
   .text-sm {
     font-size: var(--text-sm);
@@ -1893,29 +1846,17 @@
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
   }
-  .text-blue-600 {
-    color: var(--color-blue-600);
-  }
   .text-green-400 {
     color: var(--color-green-400);
   }
   .text-orange-600 {
     color: var(--color-orange-600);
   }
-  .text-red-500 {
-    color: var(--color-red-500);
-  }
-  .text-slate-100 {
-    color: var(--color-slate-100);
-  }
-  .text-slate-400 {
-    color: var(--color-slate-400);
-  }
   .text-slate-500 {
     color: var(--color-slate-500);
   }
-  .text-slate-600 {
-    color: var(--color-slate-600);
+  .text-yellow-400 {
+    color: var(--color-yellow-400);
   }
   .capitalize {
     text-transform: capitalize;
@@ -2029,12 +1970,6 @@
   }
   .decoration-from-font {
     text-decoration-thickness: from-font;
-  }
-  .underline-offset-4 {
-    text-underline-offset: 4px;
-  }
-  .underline-offset-10 {
-    text-underline-offset: 10px;
   }
   .underline-offset-auto {
     text-underline-offset: auto;

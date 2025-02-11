@@ -1,3 +1,0 @@
-Stpe 1 : Use Play CDN(Content Delivery Network)
-Step 2: Use Tailwind CLI (Preferred)
-
