@@ -1519,14 +1519,29 @@
   .border-blue-500 {
     border-color: var(--color-blue-500);
   }
+  .border-green-200 {
+    border-color: var(--color-green-200);
+  }
+  .border-green-800 {
+    border-color: var(--color-green-800);
+  }
+  .border-green-900 {
+    border-color: var(--color-green-900);
+  }
   .border-orange-400 {
     border-color: var(--color-orange-400);
   }
   .border-pink-300 {
     border-color: var(--color-pink-300);
   }
+  .border-red-400 {
+    border-color: var(--color-red-400);
+  }
   .border-red-500 {
     border-color: var(--color-red-500);
+  }
+  .border-sky-400 {
+    border-color: var(--color-sky-400);
   }
   .border-slate-500 {
     border-color: var(--color-slate-500);
@@ -1554,6 +1569,12 @@
   }
   .bg-blue-800 {
     background-color: var(--color-blue-800);
+  }
+  .bg-green-300 {
+    background-color: var(--color-green-300);
+  }
+  .bg-inherit {
+    background-color: inherit;
   }
   .bg-red-500 {
     background-color: var(--color-red-500);
@@ -2399,6 +2420,26 @@
   }
   .transform-view {
     transform-box: view-box;
+  }
+  .odd\:bg-red-400 {
+    &:nth-child(odd) {
+      background-color: var(--color-red-400);
+    }
+  }
+  .even\:bg-blue-400 {
+    &:nth-child(even) {
+      background-color: var(--color-blue-400);
+    }
+  }
+  .even\:bg-sky-400 {
+    &:nth-child(even) {
+      background-color: var(--color-sky-400);
+    }
+  }
+  .even\:bg-yellow-400 {
+    &:nth-child(even) {
+      background-color: var(--color-yellow-400);
+    }
   }
   .lg\:box-content {
     @media (width >= 64rem) {
