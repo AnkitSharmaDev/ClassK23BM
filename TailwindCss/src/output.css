@@ -875,11 +875,26 @@
   .max-w-960 {
     max-width: calc(var(--spacing) * 960);
   }
+  .max-w-\[220px\] {
+    max-width: 220px;
+  }
+  .max-w-\[520px\] {
+    max-width: 520px;
+  }
+  .max-w-\[920px\] {
+    max-width: 920px;
+  }
+  .max-w-md {
+    max-width: var(--container-md);
+  }
   .max-w-none {
     max-width: none;
   }
   .max-w-screen {
     max-width: 100vw;
+  }
+  .max-w-sm {
+    max-width: var(--container-sm);
   }
   .min-w-screen {
     min-width: 100vw;
@@ -2352,6 +2367,11 @@
   }
   .transform-view {
     transform-box: view-box;
+  }
+  .lg\:max-w-sm {
+    @media (width >= 64rem) {
+      max-width: var(--container-sm);
+    }
   }
 }
 @keyframes spin {
