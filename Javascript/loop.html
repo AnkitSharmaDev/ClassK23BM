@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class=" bg-black text-white text-center mt-10 text-5xl font-bold">
+    <script>
+document.write("while loop");
+document.write("<br>");
+        var k=2;
+        while (k<=20) {
+            document.write(k);
+            k++;
+        }
+        document.write("<br>");
+        document.write("for loop");
+        document.write("<br>");
+        for (var i=0; i<20; i++) {
+            document.write(i+1);
+        }
+        document.write("<br>");
+        document.write("do while loop");
+        do{
+            document.write(i+1);
+            i++;
+        }
+        while(i<20);
+
+
+        document.write("<br><br>Break Example:<br>");
+        
+        for(let i = 1; i <= 10; i++) {
+            if(i === 5) {
+                break; // Loop stops at 5
+            }
+            document.write(i + " ");
+        }
+
+        document.write("<br><br>Continue Example:<br>");
+         
+        for(let i = 1; i <= 10; i++) {
+            if(i === 5) {
+                continue;  
+            }
+            document.write(i + " ");
+        }
+    </script>
+</body>
+</html>
