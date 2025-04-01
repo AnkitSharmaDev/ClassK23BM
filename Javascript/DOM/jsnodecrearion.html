@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+    <script>
+
+        let para=document.createElement("p");
+        para.textContent = "This is a new paragraph";
+        document.body.appendChild(para);
+
+
+ 
+
+
+        let node=document.createTextNode("Text node example");
+        document.body.appendChild(node);
+
+
+
+        let dwt=document.createElement("div");
+        dwt.className="border-4 border-blue-800 text-center text-3xl font-bold bg-amber-200 w-full h-32";
+        dwt.textContent="This is a div with Tailwind CSS";
+        document.body.appendChild(dwt);
+        dwt.appendChild(para);
+        // document.body.removeChild(dwt);
+        dwt.removeChild(para);
+         
+
+    </script>
+    
+</body>
+</html>

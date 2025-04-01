@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://tailwindcss.com/"></script>
+</head>
+<body>
+    <p id="p1" class="para" >Creating a Style</p>
+    <button id="b1" onclick="changeStyle()">changeStyle</button>
+    <script>
+        function changeStyle(){
+            var p = document.getElementById("p1");
+            p.style.color = "red";
+            p.style.fontSize = "24px";
+            p.style.fontWeight = "bold";
+            p.style.textTransform = "uppercase";
+            p.style.backgroundColor = "skyblue";
+            p.style.border = "2px solid black";
+            p.style.padding = "10px";
+            p.style.margin = "20px";
+            p.style.cursor = "pointer";
+            p.style.display = "inline-block";
+            p.style.transition = "all 1s ease";
+            body.style.backgroundColor="#FFFF";
+
+        }
+    </script>
+</body>
+</html>
