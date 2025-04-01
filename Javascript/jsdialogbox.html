@@ -6,19 +6,38 @@
     <title>Dialog Box</title>
 </head>
 <body>
-    <script>
-        // alert("Error")
-        // var rs=confirm("are you on google ?");
-        // console.log(rs);
-        // if(rs==true){
-        //     window.location.href="https://www.google.com/search?q=instagram.com";
-        // }
-        // prompt("Enter your age",5);
+      <script>
+        
 
-        var num1=parseInt(prompt("Numerm 1:"));
-        var num2=parseInt(prompt("Numerm 2:"));
-        var rs=num1+num2;
-        alert(rs);
+    document.write("<table border='1' align='center' style='border-collapse: collapse; margin-top: 20px;'>");
+    document.write("<tr>");
+    for(let i = 1; i <= 5; i++) {
+        document.write("<th style='padding: 10px;'>Table " + i + "</th>");
+    }
+    document.write("</tr>");
+    
+    for(let i = 1; i <= 10; i++) {
+        document.write("<tr>");
+        for(let j = 1; j <= 5; j++) {
+            document.write("<td style='padding: 10px; text-align: center;'>" + j + " x " + i + " = " + (i*j) + "</td>");
+        }
+        document.write("</tr>");
+    }
+    document.write("</table>");
+
+let laptop= {
+    brand:"dell",
+    process:"i3",
+    color:"black"
+}    
+
+console.log(laptop);
+console.log(laptop.brand);
+console.log(laptop.process);
+console.log(laptop.color);
+
+console.log("on Flipkart ," + laptop.brand + " " + laptop.process + " " + laptop.color + "processor is on sale");
+console.log(` On Flipkart , ${laptop.brand} ${laptop.process} ${laptop.color}`);
     </script>
 </body>
 </html>

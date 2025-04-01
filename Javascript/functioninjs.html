@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <script>
+     
+ function calsquare(num){
+     return num * num;
+ }
+ function calsum(a,b){
+    return a+b;
+ }
+ let num=parseInt(prompt("Enter a number for square"));
+ let sqres=calsquares(num);
+ document.write(`Square of ${num} is ${sqres}`);
+
+ let num1=parseInt(prompt("Enter first number"));
+ let num2=parseInt(prompt("Enter second number"));
+ let sumres=calsum(num1,num2);
+ document.write(`Sum of ${num1} and ${num2} is ${sumres}`);
+    </script>
+</body>
+</html>

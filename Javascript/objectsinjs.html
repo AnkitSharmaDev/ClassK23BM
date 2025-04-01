@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+let laptop= {
+    brand:"dell",
+    process:"i3",
+    color:"black"
+}    
+
+// console.log(laptop);
+// console.log(laptop.brand);
+// console.log(laptop.process);
+// console.log(laptop.color);
+
+  {
+    console.log(`${laptop.brand} ${laptop.process} ${laptop.color} processor is introduced by Dell.`);
+}
+// console.log("on Flipkart ," + laptop.brand + " " + laptop.process + " " + laptop.color + "processor is on sale");
+// console.log(` On Flipkart , ${laptop.brand} ${laptop.process} ${laptop.color}`);
+
+// laptop.intro();  
+let student = new Object();
+student.name="Ankit";
+student.email="ankit@gmail.com";
+console.log(student["name"]);
+console.log(student["email"]);
+
+let student2 = {
+    name: "Rahul",
+    email: "rahul@gmail.com",
+    intro: function() {
+        console.log(`Student name is ${this.name} and email is ${this.email}`);
+    }
+};
+
+student2.intro();
+
+function Laptop(brand, color) {
+    this.brand = brand;
+    this.color = color;
+}
+
+let ltop1 = new Laptop("hp", "blue");
+console.log(`${ltop1.brand} ${ltop1.color} laptop is introduced.`);
+let ltop2 = new Laptop("dell", "black"); 
+console.log(`${ltop2.brand} ${ltop2.color} laptop is introduced.`);
+
+
+function laptops(brand,color){
+    this.brand=brand;
+    this.color=color;
+
+
+    let ltop1= new laptop("hp","blue");
+    console.log(`${ltop1.brand} ${ltop1.color} laptop is introduced.`);
+    let ltop2= new laptop("dell","black");
+    console.log(`${ltop2.brand} ${ltop2.color} laptop is introduced.`);
+}
+    </script>
+</body>
+</html>
